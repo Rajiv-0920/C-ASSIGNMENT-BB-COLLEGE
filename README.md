@@ -1,7 +1,6 @@
 # C LANGUAGE PROGRAMME PROBLEM TO SOLVE IN LAB
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-I</b></p>
-
+## SET-I
 
 ### 1. Write a program to display “hello world” in C.
 
@@ -142,7 +141,7 @@ int main()
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-II</b></p>
+## SET-II
 
 ### 1. Write a program to declare two integer and one float variables then initialize them to 10, 15, and 12.6. Also print the variable values in the screen. 
 
@@ -448,7 +447,7 @@ int main()
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-III</b></p>
+## SET-III
 
 ### 1. Write a program to find the largest and smallest among three entered numbers and also display whether the identified largest/smallest number is even or odd. 
 
@@ -702,7 +701,7 @@ int main()
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-IV</b></p>
+### SET-IV
 
 ### 1. Write a program to input two integer numbers and display the sum of even numbers between these two input numbers. 
 
@@ -822,7 +821,7 @@ int main()
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-V</b></p>
+## SET-V
 
 ### 1. Write a program to add, subtract, multiply and divide two integers using user defined type function with return type. 
 
@@ -1062,7 +1061,7 @@ int glo()
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-VI</b></p>
+## SET-VI
 
 ### 1. Write a program to enter 10 floating numbers in an array and display it. 
 
@@ -1392,7 +1391,7 @@ int checkPalindrome(char *str, int l)
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-VII</b></p>
+## SET-VII
 
 
 ### 1. Write a program to find biggest among three numbers using pointer. 
@@ -1619,7 +1618,7 @@ void replace(char *str, char r, char t)
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-VIII</b></p>
+## SET-VIII
 
 ### 1. Write a program to copy one string to another string with and without using string handling function. 
 
@@ -1812,7 +1811,7 @@ int main()
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-IX</b></p>
+## SET-IX
 
 ### 1. Create a structure named company which has name, address, phone and noOfEmployee as member variables. Read name of company, its address, phone and noOfEmployee. Finally display these members’ value. 
 
@@ -2190,7 +2189,7 @@ int main()
 }
 ```
 
-<p style="text-align:center;font-size:1.2rem"><b>SET-X</b></p>
+## SET-X
 
 ### 1. Write characters into a file “filec.txt”. The set of characters are read form the keyboard until an enterkey is pressed (use putc() and getc() function). 
 
