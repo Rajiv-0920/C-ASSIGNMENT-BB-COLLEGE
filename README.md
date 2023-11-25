@@ -690,7 +690,7 @@ int main()
         {
             r1 = -b / (2 * a);
             r2 = -b / (2 * a);
-            printf("The roots of the equation are equal having the value = %f %f", r1, r2);
+            printf("Roots of the equation are equal having the value = %f %f", r1, r2);
         }
         else
         {
