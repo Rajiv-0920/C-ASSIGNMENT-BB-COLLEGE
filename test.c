@@ -1,27 +1,46 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
-    FILE *fptr;
-    int count = 0;
-    char ch;
+    int mat1[100][100];
+    int mat2[100][100];
+    int sum[100][100];
+    int row = 3, col = 3, i, j;
 
-    fptr = fopen("filec.txt", "r");
-    if (fptr == NULL)
+    printf("\nEnter the value of First matrix:");
+    for (i = 0; i < row; i++)
     {
-        printf("FILE not open");
-        exit(1);
+        for (j = 0; j < col; j++)
+        {
+            printf("\nEnter Element [%d][%d]: ", i, j);
+            scanf("%d", &mat1[i][j]);
+        }
     }
-    while (1)
+    printf("\nEnter the value of Second matrix:");
+    for (i = 0; i < row; i++)
     {
-        ch = fgetc(fptr);
-        if (ch == EOF)
-            break;
-        count++;
-        printf("%c", ch);
+        for (j = 0; j < col; j++)
+        {
+            printf("\nEnter Element [%d][%d]: ", i, j);
+            scanf("%d", &mat2[i][j]);
+        }
     }
-    printf("\nNumber of character = %d", count);
-    fclose(fptr);
+
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            sum[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+    printf("\nSum Matrix:\n");
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("%d ", sum[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }

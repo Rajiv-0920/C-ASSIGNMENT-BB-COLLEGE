@@ -518,7 +518,8 @@ int main()
     scanf("%c", &ch);
 
     printf("\nUsing IF ELSE");
-    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' 
+    || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
         printf("\n\tAlphabet is Vowel");
     else
         printf("\n\tAlphabet is Consonant");
@@ -1159,24 +1160,188 @@ int main()
 
 > Test Data:
 
+    Enter the value of First matrix:
+    Enter Element [0][0]: 1
+    
+    Enter Element [0][1]: 2
+    
+    Enter Element [1][0]: 3
+    
+    Enter Element [1][1]: 4
+    
+    Enter Element [2][0]: 5
+    
+    Enter Element [2][1]: 6
+    
+    Enter the value of Second matrix:
+    Enter Element [0][0]: 1
+    
+    Enter Element [0][1]: 2
+    
+    Enter Element [1][0]: 3
+    
+    Enter Element [1][1]: 4
+    
+    Enter Element [2][0]: 5
+    
+    Enter Element [2][1]: 6
+
 > Expected Output:
 
+    Sum Matrix:
+    2 4
+    6 8
+    10 12
+    
 > Source Code:
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int mat1[100][100];
+    int mat2[100][100];
+    int sum[100][100];
+    int row = 3, col = 2, i, j;
+
+    printf("\nEnter the value of First matrix:");
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("\nEnter Element [%d][%d]: ", i, j);
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+    printf("\nEnter the value of Second matrix:");
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("\nEnter Element [%d][%d]: ", i, j);
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            sum[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+    printf("\nSum Matrix:\n");
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("%d ", sum[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
 ```
 
 ### 5. Write a program to multiply two 3*3 matrix. 
 
 > Test Data:
 
+    Enter the value of First matrix:
+    Enter Element [0][0]: 1
+    
+    Enter Element [0][1]: 1
+    
+    Enter Element [0][2]: 1
+    
+    Enter Element [1][0]: 1
+    
+    Enter Element [1][1]: 1
+    
+    Enter Element [1][2]: 1
+    
+    Enter Element [2][0]: 1
+    
+    Enter Element [2][1]: 1
+    
+    Enter Element [2][2]: 1
+    
+    Enter the value of Second matrix:
+    Enter Element [0][0]: 1
+    
+    Enter Element [0][1]: 1
+    
+    Enter Element [0][2]: 1
+    
+    Enter Element [1][0]: 1
+    
+    Enter Element [1][1]: 1
+    
+    Enter Element [1][2]: 1
+    
+    Enter Element [2][0]: 1
+    
+    Enter Element [2][1]: 1
+    
+    Enter Element [2][2]: 1
+
 > Expected Output:
+
+    Sum Matrix:
+    2 2 2
+    2 2 2
+    2 2 2
 
 > Source Code:
 
 ```c
+#include <stdio.h>
 
+int main()
+{
+    int mat1[100][100];
+    int mat2[100][100];
+    int sum[100][100];
+    int row = 3, col = 3, i, j;
+
+    printf("\nEnter the value of First matrix:");
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("\nEnter Element [%d][%d]: ", i, j);
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+    printf("\nEnter the value of Second matrix:");
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("\nEnter Element [%d][%d]: ", i, j);
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            sum[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+    printf("\nSum Matrix:\n");
+    for (i = 0; i < row; i++)
+    {
+        for (j = 0; j < col; j++)
+        {
+            printf("%d ", sum[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
 ```
 
 ### 6. Write a program to read a string and check for palindrome without using string related function (a string is palindrome if its half is mirror by itself eg: abcdcba). 
